@@ -13,11 +13,13 @@ import flet as ft
 # chama a função definida na main
 #ft.app(target=main)
 
+
 # chmando na forma de classes
 
 class App:
-    def __init__(self, page:ft.Page):
-        pass
+    def __init__(self, page: ft.Page):
+        mensagem = ft.Text(value='Olá mundo')
+        page.add(mensagem)
 
 
 ft.app(target=App)
